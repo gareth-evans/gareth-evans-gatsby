@@ -11,3 +11,9 @@ tags:
   - ""
 ---
 asdasdas
+
+```csharp
+public class Foo
+{
+}
+```
