@@ -1,6 +1,6 @@
 ---
 path: debugging-node-in-docker-with-visual-studio-code
-date: 2021-03-20T13:52:05.482Z
+date: 2016-06-23T12:52:05.482Z
 title: Debugging Node running in Docker with Visual Studio Code
 description: "I’ve just started looking into Docker so I am no means an expert.
   One of the first questions I had was how do I debug an app that is running in
