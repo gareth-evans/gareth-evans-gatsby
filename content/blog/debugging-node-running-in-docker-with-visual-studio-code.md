@@ -6,6 +6,9 @@ description: "I’ve just started looking into Docker so I am no means an expert
   One of the first questions I had was how do I debug an app that is running in
   a docker container. The answer is Visual Studio Code and it’s actually quite
   easy. "
+tags:
+  - Docker
+  - VisualStudioCode
 ---
 In this post I’ll walk you through a sample project that is available from [here](https://github.com/gareth-evans/node-debug-in-docker).
 
