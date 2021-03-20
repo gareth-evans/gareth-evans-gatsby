@@ -9,6 +9,8 @@ description: "I’ve just started looking into Docker so I am no means an expert
 tags:
   - Docker
   - VisualStudioCode
+redirects:
+ - /2016/06/23/Debugging-Node-running-in-Docker-with-Visual-Studio-Code/
 ---
 In this post I’ll walk you through a sample project that is available from [here](https://github.com/gareth-evans/node-debug-in-docker).
 

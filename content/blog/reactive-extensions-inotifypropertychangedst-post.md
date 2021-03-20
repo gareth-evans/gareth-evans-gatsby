@@ -6,6 +6,8 @@ description: Using Rx to create a stream of INotifyPropertyChanged events
 tags:
   - C#
   - ReactiveExtensions
+redirects:
+  - /2016/10/08/Reactive-Programming-using-Reactive-Extensions-and-INotifyPropertyChanged/
 ---
 I recently worked on a complex trade entry form in WPF that involved complex relationships between different fields on the form. When certain values were set on the form then other areas of the forms needed to be enabled, disabled or constrained in other ways.
 

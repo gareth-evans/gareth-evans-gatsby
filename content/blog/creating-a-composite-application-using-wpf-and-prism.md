@@ -8,6 +8,8 @@ tags:
 - WPF
 - XAML
 - Prism
+redirects:
+ - /2010/07/30/Creating-a-Composite-Application-using-WPF-and-Prism/
 ---
 
 ## Implementation

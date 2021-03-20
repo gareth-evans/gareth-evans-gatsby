@@ -7,6 +7,8 @@ tags:
  - C#
  - WPF
  - XAML
+redirects:
+  - /2010/10/24/Collapsing-Controls-Bound-to-Commands-in-WPF/
 ---
 
 For example if a modal dialog to create a new contact has a required fields, it makes sense that the button to save the new contact is visible but disabled until the required fields have been completed. In fact it would look pretty weird to have the button hidden until the contact can be saved.

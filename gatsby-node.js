@@ -1,10 +1,11 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const { Console } = require("console")
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+  const blogPost = path.resolve(`./src/templates/blog-post.js`);
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
   return graphql(
     `
       {
@@ -18,7 +19,8 @@ exports.createPages = ({ graphql, actions }) => {
                 slug
               }
               frontmatter {
-                title
+                title,
+                redirects
               }
             }
           }
@@ -34,11 +36,24 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMdx.edges
 
     posts.forEach((post, index) => {
+      const { redirects } = post.node.frontmatter;
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
+      const postPath = `blog${post.node.fields.slug}`;
+      
+      if(redirects) {
+        redirects.forEach(redirect => { 
+          createRedirect({
+            fromPath: redirect,
+            toPath: postPath,
+            redirectInBrowser: true,
+            isPermanent: true
+          });
+        });
+      }
 
       createPage({
-        path: `blog${post.node.fields.slug}`,
+        path: postPath,
         component: blogPost,
         context: {
           slug: post.node.fields.slug,

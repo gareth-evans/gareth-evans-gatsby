@@ -8,6 +8,8 @@ tags:
 - Silverlight
 - WPF
 - XAML
+redirects:
+ - /2010/07/28/Linking-Multiple-Value-Converters-in-WPF-and-Silverlight/
 ---
 I started off with a simple visibility converter similar to those that can be found in numerous places on the web, i.e True is converted to visible and False is converted to collapsed. I called the VisibilityConverter; the code for this is shown below:
 

@@ -7,6 +7,8 @@ description: Recently I had to work with Jest, Facebook’s testing framework. N
   led me down a path I thought I would never go, debugging the debugger.
 tags:
   - VisualStudioCode
+redirects:
+ - /2016/06/14/Debugging-the-Visual-Studio-Code-Debugger/
 ---
 Whilst I managed to solve my Jest issue, poking around the debugger was actually more interesting than the problem I was trying to solve.
 

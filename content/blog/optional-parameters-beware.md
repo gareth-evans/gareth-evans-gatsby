@@ -5,6 +5,8 @@ title: Optional Parameters Beware
 description: Have you ever wondered how optional parameters in C# 4 work? No?
   Well I have. After a bit of playing around I discovered a potential for bugs
   when using them.
+redirects:
+ - /2010/10/28/Optional-Parameters-Beware/
 ---
 You have a simple application that creates contacts. The Contact class is shared between other applications and as a result is part of an external assembly. The class has a single constructor which takes the contact name and address details as parameters. The last parameter Country has a default value of “UK”.
 
