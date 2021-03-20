@@ -1,6 +1,6 @@
 ---
 path: reactive-extensions-inotifypropertychanged
-date: 2021-03-20T08:46:06.929Z
+date: 2016-10-07T23:00:00.000Z
 title: Reactive Programming using Reactive Extensions and INotifyPropertyChanged
 description: Using Rx to create a stream of INotifyPropertyChanged events
 tags:
