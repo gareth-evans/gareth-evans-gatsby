@@ -12,9 +12,11 @@ Whilst I managed to solve my Jest issue, poking around the debugger was actually
 
 Visual Studio Code has a really extensible model for debuggers and you can read about it more here, but to give an overview, VS Code uses debug adapters to talk to underlying debuggers. It communicates with these adapters using the VS Code Debug Protocol (CDP).
 
-The debugger we’ll be looking at here is the node debugger so let’s get the code by running the following commands:\
-git clone git@github.com:Microsoft/vscode-node-debug.git\
+The debugger we’ll be looking at here is the node debugger so let’s get the code by running the following commands:
+```powershell
+git clone git@github.com:Microsoft/vscode-node-debug.git
 npm install
+```
 
 We also need a project to debug, you can use one of your own or use my boilerplate Jest example:
 
